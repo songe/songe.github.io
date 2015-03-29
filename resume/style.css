@@ -1,0 +1,74 @@
+body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Times;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+ul#contact {
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+ul#contact li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+hr {
+    border-top: 1px solid #999;
+    border-bottom: 0;
+}
+
+#contact li+li:before {
+    content: " | ";
+}
+
+#resume>dt {
+    font-weight: bold;
+    font-style: normal;
+    float: left;
+    width: 15%;
+}
+
+hr.clear {
+    float: none;
+    margin: 0;
+    height: 1em;
+    clear: both;
+    border: none;
+}
+
+#resume>dd {
+    float: right;
+    width: 80%;
+}
+
+#resume>dd+dt {
+    padding-top: 1em;
+}
+
+dt.title {
+    font-weight: bold;
+    font-style: normal;
+}
+
+dt {
+    font-style: italic;
+}
+
+dd dl {
+    margin: 0;
+}
+
+dd ul {
+    padding: 0;
+    margin-top: 0.5em;
+}
+
