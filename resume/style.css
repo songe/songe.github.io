@@ -1,10 +1,12 @@
 body {
-    width: 800px;
+    font-size: 16px;
+    line-height: 1.2em;
+    width: 50em;
     margin-left: auto;
     margin-right: auto;
     font-family: Times;
-    font-size: 16px;
-    line-height: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 8em;
 }
 
 h1 {
@@ -27,31 +29,24 @@ hr {
 }
 
 #contact li+li:before {
-    content: " | ";
+    content: " \2655  "; /* ♕  */
 }
 
-#resume>dt {
+#resume>dt { /* section titles */
     font-weight: bold;
     font-style: normal;
     float: left;
     width: 15%;
 }
 
-hr.clear {
-    float: none;
-    margin: 0;
+.clear {
     height: 1em;
     clear: both;
-    border: none;
 }
 
-#resume>dd {
+#resume>dd { /* section bodies */
     float: right;
     width: 80%;
-}
-
-#resume>dd+dt {
-    padding-top: 1em;
 }
 
 dt.title {
@@ -59,16 +54,31 @@ dt.title {
     font-style: normal;
 }
 
+dt.duration {
+    float: right;
+    margin-top: -2.3em;
+}
+
 dt {
     font-style: italic;
 }
 
-dd dl {
+dd dl, dd ul {
     margin: 0;
+    padding: 0;
 }
 
-dd ul {
-    padding: 0;
+dd.experience ul, ul#courses {
     margin-top: 0.5em;
 }
 
+dd dl dd+dt {
+    margin-top: 0.5em;
+}
+
+#courses li {
+    list-style-type: none;
+    width: 12em;
+    display: inline;
+    float: left;
+}
