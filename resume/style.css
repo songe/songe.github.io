@@ -90,3 +90,13 @@ dd dl dt+dt {
     display: inline;
     float: left;
 }
+
+footer {
+    clear: both;
+}
+
+@media print {
+    footer {
+        display: none;
+    }
+}
