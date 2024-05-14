@@ -99,4 +99,8 @@ footer {
     footer {
         display: none;
     }
+
+    .print-page-break {
+        page-break-before: always; /* Page break for PDF print */
+    }
 }
